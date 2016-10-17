@@ -1,0 +1,454 @@
+﻿
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Ваш заказ принят</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- <link rel="stylesheet" href="libs/owl.carousel.2/assets/owl.carousel.css" /> -->
+	<style>/*
+//////////// ÃÅ¾Ãâ€˜ÃÂ©ÃËœÃâ€¢ ÃÂ¡ÃÂ¢ÃËœÃâ€ºÃËœ //////////////////
+// ÃÂ ÃÂÃâ€”ÃÅ“Ãâ€¢ÃÂ  ÃÂ¸ ÃÅ¸ÃÅ¾Ãâ€ºÃÅ¾Ãâ€“Ãâ€¢ÃÂÃËœÃâ€¢
+*/
+
+.w100 {width: 100%;}
+.h100 {height: 100%;}
+.noPadding {padding: 0;}
+.posA {position: absolute;}
+.posR {position: relative;}
+.centerT {text-align: center;}
+.rightT {text-align: right;}
+.centerB {margin: auto;}
+.m0 {margin: 0;}
+.uppercase {text-transform: uppercase;}
+/*********************************************/
+body {
+	font-family: "RobotoRegular", Arial, sans-serif;
+	font-size: 16px;
+	text-align: center;
+	color: #ffffff;
+	background: url(./img/low_poly_background.jpg) center / cover no-repeat !important;
+}
+.wrap {
+	max-width: 1962px;
+/*
+	min-width: 1260px;
+*/	
+}
+header {
+	/* background: url(../img/low_poly_background.jpg) center / cover no-repeat; */
+	height: 600px;
+	font: 300 17px / 30px Roboto;
+}
+header .check_img {
+	background: url(./img/check.png) center / cover no-repeat;
+	margin: 82px auto 51px;
+	width: 150px;
+	height: 150px;
+}
+header .title.border_white {
+	border: 3px #fff solid;
+	margin: 52px auto;
+	width: 700px;
+	height: 144px;
+}
+header .title h2 {
+	font-family: "RobotoRegular", Arial, sans-serif;
+	font-size: 40px;
+	font-weight: 400;
+	margin: 38px auto 8px;
+	text-transform: uppercase;
+}
+header .title p {
+	font-family: "RobotoRegular", Arial, sans-serif;
+	margin-top: 5px;
+}
+/*=====================================
+|   |   |   |     ÃÂ¡ÃÂ¿ÃÂµÃ‘â€  ÃÂ¿Ã‘â‚¬ÃÂµÃÂ´ÃÂ»ÃÂ¾ÃÂ¶ÃÂµÃÂ½ÃÂ¸ÃÂµ
+======================================*/
+.spec {
+	height: 261px;
+	background-color:#3e51b5;
+}
+.spec .title {
+	text-transform: uppercase;
+	font-family: "RobotoRegular", Arial, sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	margin: 38px auto 8px;
+	text-transform: uppercase;
+	margin-top: 51px;
+	
+}
+.spec h1 {
+	font-family: "RobotoRegular", Arial, sans-serif;
+	font-size: 50px;
+	font-weight: 400;
+	margin: 38px auto 8px;
+	text-transform: uppercase;
+	margin: 0 auto;
+}
+.spec p {
+	margin-top: 0;
+}
+/*=====================================
+|   |   |   |     ÃÂ¢ÃÅ¾Ãâ€™ÃÂÃÂ ÃÂ«
+======================================*/
+article {
+	height: 100%;
+    background-color: #E7E7EB;
+    padding-bottom: 30px;
+}
+.mt {margin-top: -90px;}
+article section {
+	position: relative;
+	width: 500px;
+	height: 590px;
+	color: #444444;
+	font: 15px / 20px Roboto;
+	background-color: #fff;
+	margin-bottom: 50px;
+}
+section .slider {
+	position: relative;
+}
+section .slider .item {
+	display: block;
+	width: 500px;
+	height: 300px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/* ÃÅ¡ÃÂ°Ã‘â‚¬Ã‘â€šÃÂ¸ÃÂ½ÃÂºÃÂ¸ Ã‘ÂÃÂ»ÃÂ°ÃÂ¹ÃÂ´ÃÂµÃ‘â‚¬ÃÂ° */
+.i2 {
+	background-image: url(../img/BaByliss-curl-secret-step3.jpg);
+}
+.i1 {
+	background-image: url(../img/bab1.jpg);
+}
+.i3 {
+	background-image: url(../img/maxresdefault.jpg);
+}
+.i4 {
+	background-image: url(../img/fast1.jpg);
+}
+.i5 {
+	background-image: url(../img/scholl1.jpg);
+}
+/*********************/
+section .left {
+	position: absolute;
+	z-index: 2;
+	top: 130px;
+	left: 10px;
+	width: 23px;
+	height: 40px;
+	background: url(../img/left_arrow.png);
+	cursor: pointer;
+}
+section .right {
+	position: absolute;
+	z-index: 2;
+	top: 130px;
+	right: 10px;
+	width: 23px;
+	height: 40px;
+	background: url(../img/right_arrow.png);
+	cursor: pointer;
+}
+article .cena {
+	position: absolute;
+	z-index: 2;
+	top: 280px;
+	left: 362px;
+	width: 118px;
+	height: 40px;
+	background-color:#3e51b5;
+	color: #fff;
+	padding-top: 4px;
+	font: 24px / 30px Roboto;
+}
+article .cena span {
+	font: 17px / 30px Roboto;
+}
+article .desc {
+	text-align: left;
+	padding: 0px 31px;
+}
+article h3 {
+	font: 500 24px / 30px Roboto;
+	margin-top: 30px;
+	margin-bottom: 5px;
+}
+article p {
+	margin-top: 0;
+	margin-bottom: 28px;
+}
+article a {
+	display: block;
+	width: 260px;
+	height: 50px;
+	text-align: center;
+	padding-top: 14px;
+	margin: auto;
+	background-color: #ff4036;
+	text-decoration: none;
+	color: #fff;
+}
+article a:hover {
+	background-color: #FF534A;
+}
+article a.buy {
+	background-color:#3e51b5;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+}
+.block-prod{
+	background: #fff;
+	color: #000;
+	-webkit-box-shadow: 0px 0px 24px -3px rgba(0,0,0,0.55);
+	-moz-box-shadow: 0px 0px 24px -3px rgba(0,0,0,0.55);
+	box-shadow: 0px 0px 24px -3px rgba(0,0,0,0.55);
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	min-height: 200px;
+	border-radius: 15px;
+	margin-top: -200px;
+	box-sizing: border-box;
+	padding: 30px 30px;
+	border: 5px solid #71C1B6;
+}
+	.block-prod .ipic{
+		float: left;
+		width: 40%;
+		border: 1px solid #eee;
+		padding: 0 0 20px 0;
+	}
+		.block-prod .ipic img{
+			display: block;
+			max-width: 100%;
+		}
+	.block-prod .ipic-info{
+		width: 60%;
+		text-align: left;
+		font-size: 14px;
+		box-sizing: border-box;
+		padding-left: 40px;
+		float: left;
+	}
+	.block-prod h2{
+		font-size: 18px;
+		color: #000;
+		text-transform: uppercase;
+		padding: 0 0 30px 0;
+		margin: 0;
+	}
+	.block-prod .ipic-info h3{
+		font-size: 30px;
+		font-family: "RobotoBold", Arial;
+		color: #7A1E4D;
+		text-transform: uppercase;
+		padding: 0 0 10px 0;
+		margin: 0;
+	}
+	.block-prod .ipic-info h3 span{
+		font-size: 14px;
+		color: #000;
+		text-transform: none;
+		padding: 0 0 10px 0;
+		margin: 0;
+		display: block;
+	}
+	.block-prod .ipic-info p{
+		padding: 0 0 10px 0;
+		margin: 0;
+	}
+	.block-prod .ipic .price{
+		padding: 10px 0 20px 0;
+		font-family: "RobotoBold", Arial;
+	}
+	.block-prod .ipic .price span.old{
+		font-size: 28px;
+		color: #000;
+		text-decoration: line-through;
+	}
+	.block-prod .ipic .price span{
+		font-size: 40px;
+		color: red;
+		display: block;
+		text-align: center;
+		padding: 10px 0 0 0;
+	}
+	.block-prod ul li{
+		padding: 3px 0;
+		font-size: 13px;
+	}
+	.block-prod .btn-order a{
+		background: #7A1E4D;
+		font-family: "RobotoBold", Arial;
+		font-size: 18px;
+		color: #fff;
+		text-transform: uppercase;
+		width: 180px;
+		-webkit-box-shadow: 0px 0px 24px -3px rgba(0,0,0,0.55);
+		-moz-box-shadow: 0px 0px 24px -3px rgba(0,0,0,0.55);
+		box-shadow: 0px 0px 24px -3px rgba(0,0,0,0.55);
+		margin: 0 auto;
+		border-radius: 5px;
+		box-sizing: border-box;
+		padding: 12px 20px 11px 20px;
+		display: block;
+	}
+	.block-prod .btn-order input[type="submit"]{
+		background: #7A1E4D;
+		font-family: "RobotoBold", Arial;
+		font-size: 18px;
+		color: #fff;
+		text-transform: uppercase;
+		width: 180px;
+		-webkit-box-shadow: 0px 0px 24px -3px rgba(0,0,0,0.55);
+		-moz-box-shadow: 0px 0px 24px -3px rgba(0,0,0,0.55);
+		box-shadow: 0px 0px 24px -3px rgba(0,0,0,0.55);
+		margin: 0 auto;
+		border-radius: 5px;
+		box-sizing: border-box;
+		padding: 12px 20px 11px 20px;
+		display: block;
+		border:0;
+	}
+
+
+@media only screen and (max-width: 768px) {
+	.slick-prev, .slick-next {
+		display: none !important;
+	} 
+	header .check_img {
+		margin: 42px auto 30px;
+		background-size: 70px 70px;
+		width: 70px;
+		height: 70px;
+	}
+	header .title h2 {
+		font-family: "RobotoRegular", Arial, sans-serif;
+		font-size: 36px;
+		font-weight: 400;
+		line-height: 1.2;
+		margin: 18px auto 8px;
+	}
+	header .title p {
+		font-family: "RobotoRegular", Arial, sans-serif;
+		font-size: 14px;
+		margin-top: 5px;
+		line-height: 1.4;
+	}
+	.block-prod{
+		margin-top: -280px;
+	}
+}
+	
+@media only screen and (max-width: 550px) {
+	header .title h2 {
+		font-size: 28px;
+		margin: 12px auto 8px;
+	}
+	.block-prod .ipic{
+		float: none;
+		width: 100%;
+		box-sizing: border-box;
+		border-bottom: 2px solid #eee;
+		padding: 10px 20px 20px 20px;
+		margin-bottom: 30px;
+	}
+	.block-prod .ipic-info{
+		float: none;
+		width: 100%;
+		padding-top: 10px;
+		padding-left: 0;
+	}
+	.block-prod .ipic .price{
+		padding: 10px 0 10px 0;
+	}
+	.block-prod .ipic .price span.old{
+		font-size: 24px;
+	}
+	.block-prod .ipic .price span{
+		font-size: 32px;
+		color: red;
+		display: block;
+		text-align: center;
+		padding: 10px 0 0 0;
+	}
+	.block-prod{
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		width: 100%;
+		border: 5px solid #71C1B6;
+		border-left: none;
+		border-right: none;
+		border-radius: 0;
+	}
+	
+}
+</style>
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1580608968915051');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1580608968915051&ev=PageView&noscript=1"
+/></noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+</head>
+<body>
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<div class="wrap">
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="check_img"></div>
+						<div class="title">
+							<h2>Ваш заказ принят в обработку!</h2>
+							<p class="uppercase">Ожидайте звонка оператора в ближайшее время (часы работы 10.00 - 20.00)</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+	
+	</div>
+	
+	<style>.cbalink {display:none !important; }</style>
+
+
+<!-- End Google Tag Manager -->
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+	<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter38163120 = new Ya.Metrika({ id:38163120, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/38163120" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+</body>
+</html>
